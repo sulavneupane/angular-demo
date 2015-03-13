@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Angular Demo</title>
+    <script src="lib/angular/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-controller="TestController">
+    <h1>{{author.name}}</h1>
+    <p>{{ author.title + ', ' + author.company }}</p>
+</div>
+
+<script>
+    function TestController($scope) {
+        $scope.author = {
+            'name' : 'Sulav Neupane',
+            'title' : 'Developer',
+            'company' : 'Nepali Coders'
+        }
+    }
+</script>
+
+</body>
+</html>
